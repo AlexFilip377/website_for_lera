@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лера - лучший кандидат</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Выборы президента школы 2024</h1>
+        <img src="candidate-photo.jpg" alt="Фото кандидата" class="candidate-photo">
+        <p>Поддержите лучшего кандидата в президенты школы!</p>
+    </header>
+
+    <section calss="tiles">
+        <div class="tile" onclick="toggleDescription(0)">
+            <h2>Тематические дни и собрания</h2>
+            <p class="description">Я организую тематические дни и собрания, которые создадут возможность для активного участия школьников в жизни школы и предоставят каждому ученику площадку для самовыражения</p>    
+        </div>
+
+        <div class="tile" onclick="toggleDescription(1)">
+            <h2>Клубы для каждого</h2>
+            <p class="description">Я поспособствую созданию клубов по интересам, чтобы каждый ученик смог найти занятие по душе. </p>
+        </div>
+
+        <div class="tile" onclick="toggleDescription(2)">
+            <h2>Школьный парламент</h2>
+            <p class="description">Организую работу школьного парламента для решения вопросов учащихся и улучшения школьной среды.</p>
+        </div>
+
+        <div class="tile" onclick="toggleDescription(3)">
+            <h2>Челленджи для соцсетей</h2>
+            <p class="description">Запущу веселые и полезные челленджи, в которых смогут участвовать все ученики. Лучшие видео будут опубликованы в школьных соцсетях.</p>
+        </div>
+
+        <div class="tile" onclick="toggleDescription(4)">
+            <h2>Ящик пожеланий</h2>
+            <p class="description">Установлю ящик для предложений и замечаний, чтобы каждый мог внести свою лепту в улучшение школьной жизни.</p>
+        </div>
+    </section>
+
+    <section calss="candidate-info">
+        <h3>Почему я стремлюсь стать президентом?</h3>
+        <p>
+            Меня зовут Пестерева Лера и я стремлюсь стать президентом нашей школы не только ради самой должности, но и для того, чтобы внести значительный вклад в жизнь каждого из нас. Я верю, что каждый ученик уникален, и мои идеи направлены на создание комфорта. <br> Я намерена улучшить школьные мероприятия, предложить новые проекты и сделать нашу повседневную жизнь более интересной.<br> Давайте вместе создадим школу, где учиться будет приятно, а мечты — реальны! Твой голос важен для меня! Заранее спасибо!
+        </p>
+    </section>
+
+    <footer>
+        <h3>Связь c кандидатом</h3>
+        <a href="https://www.instagram.com/_.pomidoria._/profilecard/?igsh=MW45ZGNzbHN1MXoxdQ==" target="_blank">Мой Instagram</a>
+        <a href="https://www.instagram.com/reel/DBF5wO3iT0u/?igsh=cWVmdTRjNDgyeDJ0" target="_blank">Моё агитационное видео</a> 
+
+        <p class="copyright">© 2024 Пестерева Лера. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function toggleDescription(index) {
+            var descriptions = document.querySelectorAll('.description');
+            descriptions[index].classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
